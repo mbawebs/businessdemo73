@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Ay Bendito</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f8f5ef;
+color:#2f241d;
+line-height:1.6;
+}
+header{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+padding:25px 8%;
+z-index:10;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+.logo{
+font-size:2rem;
+font-weight:700;
+letter-spacing:2px;
+}
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('assets/images/hero-coffee.png');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:0 8%;
+color:white;
+}
+.hero-content{max-width:700px}
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+.hero p{
+font-size:1.2rem;
+margin-bottom:30px;
+}
+.btn{
+display:inline-block;
+padding:14px 28px;
+background:#8b5e3c;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+}
+section{
+padding:90px 8%;
+}
+.section-title{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+.story{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+.story img,
+.tradition img,
+.product-image img{
+width:100%;
+border-radius:20px;
+display:block;
+}
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin-top:40px;
+}
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:center;
+}
+.featured{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+.tradition{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+.testimonials{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+.testimonial{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+.cta{
+background:#4b2e1f;
+color:white;
+text-align:center;
+padding:100px 8%;
+}
+footer{
+background:#2b1b12;
+color:white;
+padding:40px 8%;
+text-align:center;
+}
+@media(max-width:900px){
+.hero h1{font-size:2.8rem}
+.story,.featured,.tradition,.cards,.testimonials{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">AY BENDITO</div>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Authentic Puerto Rican Coffee</h1>
+<p>Crafted with tradition, passion and premium beans to deliver a rich coffee experience in every cup.</p>
+<a href="#" class="btn">Shop Collection</a>
+</div>
+</section>
+
+<section class="story">
+<div>
+<h2 class="section-title">Our Story</h2>
+<p>Cafe Ay Bendito celebrates the rich coffee heritage of Puerto Rico. Every bag represents dedication, quality and the authentic flavor coffee lovers appreciate.</p>
+<br>
+<p>This concept redesign showcases a more premium brand experience focused on storytelling, product presentation and customer trust.</p>
+</div>
+<div>
+<img src="assets/images/puerto-rico-coffee.png" alt="Puerto Rico Coffee">
+</div>
+</section>
+
+<section>
+<h2 class="section-title" style="text-align:center;">Why Choose Ay Bendito</h2>
+<div class="cards">
+<div class="card">
+<h3>Premium Beans</h3>
+<p>Carefully selected coffee beans for exceptional flavor and aroma.</p>
+</div>
+<div class="card">
+<h3>Authentic Origin</h3>
+<p>Inspired by Puerto Rico's rich coffee-growing tradition.</p>
+</div>
+<div class="card">
+<h3>Fast Shipping</h3>
+<p>Fresh coffee delivered directly to your door.</p>
+</div>
+</div>
+</section>
+
+<section class="featured">
+<div class="product-image">
+<img src="assets/images/coffee-products.png" alt="Coffee Product">
+</div>
+<div>
+<h2 class="section-title">Featured Coffee</h2>
+<p>Discover our signature blends and premium roasted selections crafted for coffee enthusiasts who value quality and authenticity.</p>
+<br>
+<a href="#" class="btn">View Products</a>
+</div>
+</section>
+
+<section class="tradition">
+<div>
+<h2 class="section-title">Puerto Rican Tradition</h2>
+<p>From mountain farms to your morning cup, every coffee experience is inspired by generations of passion and craftsmanship.</p>
+</div>
+<div>
+<img src="assets/images/hero-coffee.png" alt="Coffee Farm">
+</div>
+</section>
+
+<section>
+<h2 class="section-title" style="text-align:center;">What Customers Say</h2>
+<div class="testimonials">
+<div class="testimonial">
+★★★★★<br><br>
+"Smooth flavor and incredible aroma. One of my favorite coffees."
+</div>
+<div class="testimonial">
+★★★★★<br><br>
+"Premium quality and beautiful presentation."
+</div>
+<div class="testimonial">
+★★★★★<br><br>
+"Authentic coffee experience from the first sip."
+</div>
+</div>
+</section>
+
+<section class="cta">
+<h2 style="font-size:3rem;margin-bottom:20px;">Ready For Your Next Cup?</h2>
+<p style="margin-bottom:30px;">Experience the taste of Puerto Rican coffee tradition.</p>
+<a href="#" class="btn">Shop Now</a>
+</section>
+
+<footer>
+<p>© Cafe Ay Bendito - Demo Homepage Redesign</p>
+</footer>
+
+</body>
+</html>
